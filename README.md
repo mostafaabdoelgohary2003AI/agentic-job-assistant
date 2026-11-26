@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/logo.png" width="128" alt="agentic-job-assistant logo"></p>
+
 # agentic-job-assistant
 
 A multi-agent workflow, built with LangGraph, that reads a job posting,
