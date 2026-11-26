@@ -1,0 +1,5 @@
+# Core
+langgraph>=0.2
+
+# Optional UI:
+# streamlit>=1.32

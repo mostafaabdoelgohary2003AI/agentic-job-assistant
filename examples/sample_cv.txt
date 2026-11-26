@@ -1,0 +1,29 @@
+Omar Khaled
+AI Engineer - 6th of October City, Giza, Egypt
+
+B.Sc. in Artificial Intelligence Sciences, Faculty of Artificial Intelligence,
+Cairo University (2022-2026), GPA 3.38/4.00.
+
+Skills: Python, SQL, machine learning, deep learning, NLP, computer vision,
+RAG, LangChain, LangGraph, Hugging Face Transformers, scikit-learn, PyTorch,
+TensorFlow, OpenCV, YOLO, pandas, NumPy, FastAPI, Flask, Streamlit, Git,
+HTML, CSS, JavaScript, TypeScript, Angular. Working proficiency in English;
+native Arabic.
+
+Projects:
+- bilingual-rag: Arabic/English RAG pipeline with citation-grounded answers
+  and hit-rate/MRR retrieval evaluation.
+- agentic-job-assistant: multi-agent LangGraph workflow that analyses a job
+  posting, matches it against a CV, and drafts an honest cover letter with a
+  critique-and-revise loop and human review.
+- llm-eval-kit: evaluation harness for LLM outputs (heuristic scorers plus
+  LLM-as-judge) with markdown reports.
+- FireGuard (graduation project, team of 8, Excellent with Honors): fire and
+  smoke detection with a YOLO model; role: deployment of the Python backend.
+- Warsaw EV charging analysis: ~114,000 charging sessions analysed with
+  pandas and visualised with Matplotlib/Seaborn.
+
+Experience:
+- Educational Content Preparation, Design & Document Formatting Using
+  Microsoft Word (2023-present, freelance, remote): full book production for
+  teachers - equations, diagrams, covers, print-ready PDFs, Arabic + English.

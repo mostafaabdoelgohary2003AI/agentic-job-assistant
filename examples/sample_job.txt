@@ -1,0 +1,15 @@
+Junior AI Engineer
+Company: Najm AI  (SAMPLE fictional company, for demo purposes)
+Location: Riyadh, Saudi Arabia (hybrid, housing allowance provided)
+
+We are hiring a junior AI engineer to build applied NLP and LLM features.
+You will work on retrieval-augmented generation (RAG) pipelines, evaluation
+of model outputs, and small internal agents that automate support tasks.
+
+Requirements:
+- Strong Python and SQL
+- Experience with machine learning and NLP fundamentals
+- Familiarity with RAG, LangChain or LangGraph, and the Hugging Face ecosystem
+- FastAPI for serving models; Docker basics
+- Arabic and English working proficiency is a strong plus
+- PyTorch or TensorFlow experience preferred
