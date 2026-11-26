@@ -63,7 +63,7 @@ engine: langgraph
 flow:   analyze_job -> profile_candidate -> match -> draft -> critique -> human_review
 
 role:   Junior AI Engineer @ Najm AI (SAMPLE fictional company)
-match:  94% (strong)
+match:  94% (strong)   <- keyword-overlap score between the candidate profile and the job text, not a quality metric
   matched: agents, arabic, english, evaluation, fastapi, hugging face, ...
   missing: docker
 
