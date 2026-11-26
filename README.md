@@ -108,3 +108,6 @@ tests/              # offline tests for tools, runner and the graph
   are my own.
 - The sample company in `examples/` is fictional and marked as such.
 - License: MIT.
+
+## Real LLM run (Gemini API free tier)
+`LLM_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai LLM_MODEL=gemini-3.1-flash-lite LLM_API_KEY=... python demo.py --llm` ran end to end on Nov 26, 2026: the LLM polished the cover letter, the Critic still flagged "company name not mentioned" and the run stopped at `awaiting_human_review`. The first attempt hit a transient 503 from the free tier, so the client now retries 429/5xx with backoff.

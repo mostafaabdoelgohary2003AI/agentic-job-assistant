@@ -23,6 +23,20 @@ class MockLLM:
         return {}
 
 
+
+def _urlopen_json(request, timeout):
+    """urlopen + JSON, retrying 429/5xx with backoff (free tiers return transient 503s)."""
+    import time, urllib.error
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or attempt == 3:
+                raise
+            time.sleep(2 ** attempt * 2)
+
+
 class OpenAICompatibleLLM:
     """Minimal chat-completions client (OpenAI, NVIDIA NIM, Ollama, ...)."""
 
@@ -49,8 +63,7 @@ class OpenAICompatibleLLM:
                      "Authorization": f"Bearer {self.api_key}"},
             method="POST",
         )
-        with urllib.request.urlopen(request, timeout=self.timeout) as response:
-            payload = json.loads(response.read().decode("utf-8"))
+        payload = _urlopen_json(request, self.timeout)
         return payload["choices"][0]["message"]["content"].strip()
 
     def complete_json(self, system: str, user: str) -> dict:
